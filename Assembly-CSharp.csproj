@@ -62,9 +62,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\DontDestroyScript.cs" />
+    <Compile Include="Assets\Scripts\DemoPlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\NavMeshPathVisualizer.cs" />
+    <Compile Include="Assets\Scripts\DemoCameraScript.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>

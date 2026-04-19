@@ -33,6 +33,16 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        if (!isPaused)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
         PlayPause();
     }
 
@@ -85,6 +95,11 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    public void ResumeButton()
+    {
+        Debug.Log("ResumePressed");
+        Time.timeScale = 1f;
+    }
     public void SettingsButton()
     {
         DontDestroyScript.Instance.settingsUi.gameObject.SetActive(true);
